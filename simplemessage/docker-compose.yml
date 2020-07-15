@@ -1,0 +1,9 @@
+version: '3'
+services:
+  simplemessage:
+    build: .
+    volumes:
+      - ./app:/var/simplemessage/app
+      - ./tests:/var/simplemessage/test
+    command: [pytest]
+
