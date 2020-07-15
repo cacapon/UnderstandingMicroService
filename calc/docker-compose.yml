@@ -1,0 +1,9 @@
+version: '3'
+services:
+  calc:
+    build: .
+    volumes:
+      - ./app:/var/calc/app
+      - ./tests:/var/calc/test
+    command: [pytest]
+

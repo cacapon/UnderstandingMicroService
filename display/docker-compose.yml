@@ -1,0 +1,9 @@
+version: '3'
+services:
+  display:
+    build: .
+    volumes:
+      - ./app:/var/display/app
+      - ./tests:/var/display/test
+    command: [pytest]
+
