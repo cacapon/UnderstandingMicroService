@@ -1,0 +1,7 @@
+version: '3'
+services:
+  integration_testing:
+    build: .
+    volumes:
+      - ./app:/var/integration_testing/app
+      - ./tests:/var/integration_testing/tests
