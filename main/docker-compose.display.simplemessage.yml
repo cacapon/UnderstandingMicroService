@@ -1,0 +1,8 @@
+version: '3'
+services:
+  integration_testing:
+    volumes:
+      - ./container/simplemessage/app:/var/integration_testing/container/simplemessage/app
+      - ./container/display/app:/var/integration_testing/container/display/app
+    command: [pytest, tests/test_display_and_simplemessage.py]
+
